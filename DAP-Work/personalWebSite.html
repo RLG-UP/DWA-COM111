@@ -6,13 +6,25 @@
         <link href="./css/styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-<div>
-        <h1 id="#">Rodrigo Lopez</h1>
-        <p>
-            <strong>Student
-           <br/>
-            Hola1234 </strong> <i> Av.Hello int. 30 </i>
-           <br/>
+<div>   
+    <table class="TablaNombre">
+        <thead>
+        <tr>
+            <td rowspan="2" class="Table_Photo"><img src="Images\My_Photo.jpg" alt="My Photo"></td>
+            <td> <h1 id="#Nombre">Rodrigo Lopez</h1></td>
+            
+        </tr>
+        <tr>
+            <td rowspan="1"><p>
+                <strong>Student
+                <br/>
+                 Hola1234 </strong> <i> Av.Hello int. 30 </i>
+            </td>
+        
+        </tr>
+        </thead>
+    </table>
+
            <hr/>
             
            <br/>
@@ -28,7 +40,7 @@
         This is a link to <a href="https://www.youtube.com/watch?v=dWRCooFKk3c&pp=ygUjd2hpbGUgbXkgZ3VpdGFyIGdlbnRseSB3ZWVwcyBwcmluY2U%3D">YouTube</a>
             <br/>
         <hr/>
-        <h2>Index</h2>
+        <h2 id="#Index">Index</h2>
         <p>
             <ol>
                 <li><a href="#Background">Background</a></li>
@@ -56,25 +68,43 @@
 </div>
 <div>
                 <h2 id="Education">Education</h2>
+
+<!--            
                 <ul>
                     <li><em>2006-2010 </em> Kindergarden: <b>Tzitlacalli</b> <img src="https://tzitlacalli.edu.mx/assets/img/logos/logo_Tzitlacalli_plumbago.png" alt="Tzitlacalli Logo" ></li>
                     <li><em>2010-2023 </em> Elementary/Middle/High School: <b>Liceo del Valle</b> <img src="./Images/images (2).png" alt="Liceo del Valle Logo" width="5%"></li>
                     <li><em>2023-2024 </em> College: <b>Universidad Panamericana</b> <img src="./Images/arbol_marca_dorado_horizontal_small.png" alt="Universidad Panamericana Logo" style="width: 150px; border: solid;"></li>
                 </ul>
+-->              
+
+                <table class="FormatTable">
+                    <thead>
+                        <tr><th>Period</th><th>Level</th><th>Institution</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><em>2006-2010</em></td><td>Kindergarden</td><td><b>Tzitlacalli</b></td><td><img src="https://tzitlacalli.edu.mx/assets/img/logos/logo_Tzitlacalli_plumbago.png" alt="Tzitlacalli Logo" id="FormatPhoto"></td></tr>
+
+                        <tr><td><em>2010-2023</em></td><td>Elementary/Middle/High School</td><td><b>Liceo del Valle</b></td><td><img src="./Images/images (2).png" alt="Liceo del Valle Logo" id="FormatPhoto"></td></tr>
+
+                        <tr><td><em>2023-Present Day</em></td><td>College</td><td><b>Universidad Panamericana</b></td><td><img src="./Images/arbol_marca_dorado_horizontal_small.png" alt="Universidad Panamericana Logo" id="FormatPhoto";></td></tr>
+                    </tbody>
+                </table>
             <hr/>
 </div>
 <div>            
                 <h2 id="Skills">Skills</h2>
                 <ol type="1" start="1">
-                    <li>Level 82 Commander in Helldivers 2</li>
-                    <li>Programming in C++</li>
-                    <li>Programming in Java</li>
-                    <li>Programming in R</li>
-                    <li>Up to date with One Piece</li>
+                    <li>English <b>90%</b></li>
+                    <li>French <b>75%</b></li>
+                    <li>Adobe Illustrator <b>75%</b></li>
+                    <li>Adobe Photoshop <b>60%</b></li>
+                    <li>Programming in C++ <b>40%</b></li>
+                    
                 </ol>
             <hr/>
 </div>
 <div>
+
             <h2 id="Hobbies">Hobbies</h2>
                 <h3 id="Favorite Food">Favorite Food</h3>
 
@@ -97,8 +127,11 @@
                 </ol>
 
                 <h3 id="Books, Movies & TV Shows">Books, Movies & TV Shows</h3>
-                <ul>
-                    <li><span>Books</span>
+                
+                
+                
+<!--    
+                <span>Books</span>
                         <ol type="i">
                             <li>The Adventures Of Sherlock Holmes </li> <img src="Images\download.jpg" alt="Sherlock">
                             <li>The Art Of War</li> <img src="Images\download (1).jpg" alt="The Art Of War">
@@ -123,11 +156,64 @@
                     </li>
                 </ul>
             <br/>
+-->
 </div>
+
+<div>
+    <table class="FormatTable">
+        <tfoot>
+            <caption><strong>Books</strong></caption>
+        </tfoot>
+        <thead>
+            <tr><td>Title</td><td>Cover</td></tr>
+        </thead>
+        <tbody>
+            <tr><td>The Adventures Of Sherlock Holmes</td><td><img src="Images\download.jpg" alt="Sherlock" id="FormatPhoto"></td></tr>
+            <tr><td>The Art Of War</td><td><img src="Images\download (1).jpg" alt="The Art Of War" id="FormatPhoto"></td></tr>
+            <tr><td>The Nicomachean Ethics</td><td><img src="Images\download (2).jpg" alt="Aristotle" id="FormatPhoto"></td></tr>
+        </tbody>
+    </table>
+    <br/>
+</div>
+
+<div>
+    <table class="FormatTable">
+        <tfoot>
+            <caption><strong>Movies</strong></caption>
+        </tfoot>
+        <thead>
+            <tr><td>Title</td><td>Poster</td></tr>
+        </thead>
+        <tbody>
+            <tr><td>Reservoir Dogs</td><td><img src="Images\download (3).jpg" alt="Reservoir Dogs" id="FormatPhoto"></td></tr>
+            <tr><td>The Godfather</td><td><img src="Images\download (4).jpg" alt="Godfather" id="FormatPhoto"></td></tr>
+            <tr><td>Indiana Jones and The Last Crusade</td><td><img src="Images\download (5).jpg" alt="Indiana" id="FormatPhoto"></td></tr>
+        </tbody>
+    </table>
+    <br/>
+</div>
+
+<div>
+    <table class="FormatTable">
+        <tfoot>
+            <caption><strong>TV Shows</strong></caption>
+        </tfoot>
+        <thead>
+            <tr><td>Title</td><td>Image</td></tr>
+        </thead>
+        <tbody>
+            <tr><td>Monster</td><td><img src="Images\download (6).jpg" alt="Monster" id="FormatPhoto"></td></tr>
+            <tr><td>The Office</td><td><img src="Images\download (7).jpg" alt="Office" id="FormatPhoto"></td></tr>
+            <tr><td>Jojo's Bizarre Adventure</td><td><img src="Images\download (8).jpg" alt="Jojo" id="FormatPhoto"></td></tr>
+        </tbody>
+    </table>
+    <br/>
+</div>
+
 <div>
             <hr/>
             <h2 id="BDays">Family Birthdays</h2>
-            <table border="1">
+            <table border="1" class="NormalTable">
                 <thead>
                     <tr>
                         <th colspan="2"><strong>Full Name</strong></th>
@@ -162,7 +248,7 @@
 </div>
 <div>
         <h2>Agenda</h2>
-            <form action="#" method="post">
+            <form action="#Nombre" method="post">
                 <label for="Event">Type For Event</label>
                 <input type="text" name="Event" placeholder="Type"/>
 
