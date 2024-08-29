@@ -20,15 +20,23 @@ width: 150px;
     border-radius:25%;
 }
 
+#GoBack{
+    text-align: right;
+}
+
 .CountryFormat{
     vertical-align: top;
     width: 100%;
 }
 ol li{
     text-decoration: dotted;
-    color:brown;
+    color:darkblue;
 }
 
+#TableLink{
+    font-size: 10px;
+    font-style: italic;
+}
 h2{
     border-bottom: 3px dotted grey;
 }
@@ -49,8 +57,18 @@ h2:hover{
     vertical-align: top;
     text-align: center;
     width: 100%;
-    white-space: nowrap;
     
+}
+
+
+.FormatTable tbody ul li{
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+}
+
+.FormatTable i{
+    font-size: 11px;
 }
 
 .FormatTable thead tr:nth-child(1){
@@ -59,8 +77,45 @@ h2:hover{
     font-weight: bold;
 }
 
+.AgendaTable{
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.AgendaTable thead tr:nth-child(1){
+    background-color: rgb(49, 197, 103);
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.AgendaTable tbody tr:nth-child(even){
+    color:black;
+    background-color:rgb(152, 212, 156);
+}
+
+.AgendaTable tbody img{
+    width: 30px;
+    
+}
+
+.AgendaTable tbody tr td:nth-child(9){
+    text-align: center;
+}
+
 #FormatPhoto{
     width: 100px;
+}
+
+#FormatPhoto2{
+    width: 200px;
+}
+
+#FormatPhoto2{
+    width: 150px;
 }
    
 .Table_Photo{
@@ -69,6 +124,7 @@ h2:hover{
     width: 0.1%;
     white-space: nowrap;
 }
+
 
 th{
     color: black;
